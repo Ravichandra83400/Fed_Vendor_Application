@@ -94,6 +94,7 @@ function 	(evt) {
 					type="text" class="form-control" id="glcode" name="gl_code" />
 			</div>
 
+
 			<br>
 
 			<div class="col-md-6">
