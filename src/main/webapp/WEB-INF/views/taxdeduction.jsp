@@ -39,7 +39,7 @@
 						<input class="form-control" type="text" required="required" name="pan_number"  pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" />
 					</div>
 					<div class="col">
-
+                         
 						<input type="file" class="form-control" name="panDocument">
 					</div>
 				</div>

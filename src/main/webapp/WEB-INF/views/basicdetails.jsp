@@ -79,25 +79,28 @@ function 	(evt) {
 
 
 
-			<div class="col-md-6">
+			<div class="container">
+				<div class="row">
+				<div class="col">
 
-				<label for="companyName" class="form-label">Company Name</label> <input
-					type="text" class="form-control" id="companyname"
+				<label for="companyName" class="form-label">Company Name</label> 
+				<input	type="text" class="form-control" id="companyname"
 					name="companyName" required="required" />
 			</div>
-			<br>
-
-
-			<div class="col-md-6">
-
-				<label for="gl_code" class="form-label">GL Code</label> <input
+			
+                  
+                  <div class="col">
+		         	<label for="gl_code" class="form-label">GL Code</label> <input
 					type="text" class="form-control" id="glcode" name="gl_code" />
 			</div>
 
 
 			<br>
 
-			<div class="col-md-6">
+			<div class="container">
+				<div class="row">
+				<div class="col">
+
 				<label class="visually-hidden" for="legalStatus">Legal
 					Status</label> <select class="form-control" name="legalStatus"
 					aria-label="Default select example" required="required">
@@ -110,12 +113,8 @@ function 	(evt) {
 					<option value="Private Limited Co">Private Limited Co</option>
 				</select>
 			</div>
-			<br>
-
-
-
-			<div class="col-md-6">
-				<label for="yearOfCorporation" class="form-label">Year Of
+		            <div class="col">
+                 <label for="yearOfCorporation" class="form-label">Year Of
 					Incorporation</label> <input type="date" name="yearOfCorporation"
 					class="form-control" id="yearof" required="required">
 			</div>
@@ -124,9 +123,11 @@ function 	(evt) {
 
 
 
-			<br>
+			
 
-			<div class="col-md-6">
+			<div class="container">
+				<div class="row">
+				<div class="col">
 				<label class="visually-hidden" for="nature">Nature of
 					business</label> <select class="form-control" id="nature" name="nature"
 					required="required">
@@ -139,22 +140,27 @@ function 	(evt) {
 				</select>
 			</div>
 
-			<div class="col-md-6">
+		        <div class="col">
 				<label for="address1" class="form-label">Address 1</label> <input
 					type="text" class="form-control" id="inputAddress" maxlength="50"
 					name="address1" placeholder="1234 Main St" required="required">
 			</div>
-			<div class="col-md-6">
+			<div class="container">
+				<div class="row">
+				<div class="col">
 				<label for="address2" class="form-label">Address 2</label> <input
 					type="text" class="form-control" id="inputAddress2" maxlength="50"
 					name="address2" placeholder="Apartment, studio, or floor">
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<label for="address3" class="form-label">Address 3</label> <input
 					type="text" class="form-control" id="inputAddress2" maxlength="50"
 					name="address3" placeholder="Apartment, studio, or floor">
 			</div>
-			<div class="col-md-6">
+			
+			<div class="container">
+				<div class="row">
+				<div class="col">
 				<label for="pincode" class="form-label">PinCode</label> <input
 					type="text" pattern="[0-9]{6}" class="form-control" name="pincode"
 					maxlength="6" id="pincode" required="required">
@@ -164,12 +170,14 @@ function 	(evt) {
 					class="form-control" id="inputCity" name="city" required="required">
 			</div> -->
 
-			<div class="col-md-6">
+			<div class="col">
 				<label for="city" class="form-label">State</label> <input
 					type="text" class="form-control" id="inputState" name="state" readonly="readonly"
 					required="required">
 			</div>
-			<div class="col-md-6">
+			<div class="container">
+				<div class="row">
+				<div class="col">
 				<label for="city" class="form-label">City</label> <select
 					id="inputCity" class="form-control" name="city" required="required">
 					<option value="">Select</option>
@@ -214,27 +222,32 @@ function 	(evt) {
 					<option value="WB">West Bengal</option>
 				</select>
 			</div> -->
-			<div class="col-md-6">
+			<div class="col">
 				<label for="website" class="form-label">Website Address</label> <input
 					type="text" maxlength="30" class="form-control" name="website"
 					id="website">
 			</div>
-			<div class="col-md-6">
-				<label for="name" class="form-label">Name</label> <input type="text"
+			<div class="container">
+				<div class="row">
+				<div class="col">
+				<label for="name" class="form-label">Contact person Name</label> <input type="text"
 					class="form-control" name="name" id="name" required="required">
 			</div>
 
-			<div class="col-md-6">
+			   <div class="col">
 				<label for="number" class="form-label">Mobile Number</label> <input
 					type="tel" onkeypress="return onlyNumberKey(event)"  class="form-control" id="number"
 					maxlength="10" name="number" required="required">
 			</div>
-
-			<div class="col-md-6">
-				<label for="email" class="form-label">Email</label> <input
+           </div>
+		     	
+		    <div class="col-md-6">
+				<label for="email" class="form-label" >Email</label> <input
 					type="email" maxlength="30" class="form-control" name="email"
 					id="number" required="required">
 			</div>
+		    
+		    <br><br>
 
 
 			<div class="d-grid gap-2 d-md-flex justify-content-md-end">

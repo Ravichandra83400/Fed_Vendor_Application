@@ -29,56 +29,104 @@
 
 		<form method="post" enctype="multipart/form-data"
 			action="/savebankdetails">
-			<label>Bank Name</label> <input type="text"
-				class="form-control mb-2 mr-sm-2 mb-sm-0" id="bankname"
-				name="bank_name" placeholder="Bank name" maxlength="100"
-				required="required" /><br> <label>Bank Address</label> <input
-				type="text" class="form-control mb-2 mr-sm-2 mb-sm-0"
-				id="bankbranchaddress" name="bank_branch_address"
-				placeholder="Bank Address" maxlength="100" /><br> <label>Account
-				Hoder Name</label> <input type="text"
-				class="form-control mb-2 mr-sm-2 mb-sm-0" id="accountholdername"
-				name="account_holder_name" placeholder="Account Holder Name"
-				maxlength="300" required="required" /><br> <label>Account
-				Type</label> <select class="form-control mb-2 mr-sm-2 mb-sm-0"
+			
+			<div class="container">
+				<div class="row">
+				<div class="col">
+			<label>Bank Name</label> 
+			<input type="text"	class="form-control mb-2 mr-sm-2 mb-sm-0" id="bankname"
+				name="bank_name" placeholder="Bank name" maxlength="100" required="required" />
+				
+				</div>
+				<div class="col"> 
+				<label>Bank Address</label> 
+			 <input	type="text" class="form-control mb-2 mr-sm-2 mb-sm-0"
+				id="bankbranchaddress" name="bank_branch_address" placeholder="Bank Address" maxlength="100" /></div>
+				
+				
+				<div class="container">
+				<div class="row">
+				<div class="col">
+				 <label>Account
+				Hoder Name</label> 
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="accountholdername" name="account_holder_name" 
+				placeholder="Account Holder Name"  maxlength="300" required="required" /></div>
+				
+				<div class="col">
+				 <label>Account Type</label>
+				 <select class="form-control mb-2 mr-sm-2 mb-sm-0"
 				id="accounttype" name="account_type" required="required">
 				<option value="">Select</option>
 				<option value="Savings">Savings</option>
 				<option value="Current">Current</option>
 				<option value="NRI Account">NRI</option>
-			</select> <br> <label>IFSC Code</label> <input type="text"
-				class="form-control mb-2 mr-sm-2 mb-sm-0"
+			</select> 
+			</div>
+			<div class="container">
+				<div class="row">
+				<div class="col">
+			 <label>IFSC Code</label> 
+			<input type="text"	class="form-control mb-2 mr-sm-2 mb-sm-0"
 				pattern="^[A-Za-z]{4}[a-zA-Z0-9]{7}$" id="bankname" name="ifsc_code"
-				placeholder="IFSC Code" maxlength="20" required="required" /><br>
+				placeholder="IFSC Code" maxlength="20" required="required" /></div>
+				
+				<div class="col">
 			<label>Bank Account Document</label> <input type="file"
 				class="form-control mb-2 mr-sm-2 mb-sm-0" id="accountdocument"
 				name="bankdocfile" placeholder="Bank Account Document"
-				required="required" /><br> <label>Agreement Copy</label> <select
+				required="required" /></div>
+				
+				
+				<div class="container">
+				<div class="row">
+				<div class="col">
+				 <label>Agreement Copy</label> <select
 				class="form-control mb-2 mr-sm-2 mb-sm-0" id="aggrementCopy"
 				name="agreement_copy" placeholder="Agreement Copy">
 				<option value="">Select</option>
 				<option value="Yes">Yes</option>
 				<option value="No">No</option>
-			</select> <br> <label>Agreement Document</label> <input type="file"
+			</select> 
+			</div>
+			
+			<div class="col">
+             <label>Agreement Document</label> <input type="file"
 				class="form-control mb-2 mr-sm-2 mb-sm-0" id="aggrementdocument"
-				name="agrementfile" placeholder="Agreement Document" /><br> <label>Agreement
-				Start Date</label> <input type="date"
-				class="form-control mb-2 mr-sm-2 mb-sm-0" id="aggStartDate"
-				placeholder="Aggrement Start Date" name="agreement_start_date" /> <label>Agreement
-				End Date</label> <input type="date"
+				name="agrementfile" placeholder="Agreement Document" />
+				</div>
+
+       <div class="container">
+				<div class="row">
+				<div class="col">
+      <label>Agreement Start Date</label>
+				 
+			<input type="date"	class="form-control mb-2 mr-sm-2 mb-sm-0" id="aggStartDate"
+				placeholder="Aggrement Start Date" name="agreement_start_date" /> </div>
+				<div class="col">
+				<label>Agreement End Date</label>
+				 <input type="date"
 				class="form-control mb-2 mr-sm-2 mb-sm-0" id="aggEndDate"
-				placeholder="Aggrement End Date" name="agreement_end_date" /><br>
+				placeholder="Aggrement End Date" name="agreement_end_date" /></div>
+				</div>
 
-
+            <div class="col-6">
 			<label>Status</label> <select
 				class="form-control mb-2 mr-sm-2 mb-sm-0" id="status"
 				name="status">
 				<option value="active">Active</option>
 				<option value="inactive">InActive</option>
-
-			</select> <br> <br>
-			<button type="submit" class="btn btn-primary">Add</button>
-
+				</select> 
+				</div>
+				</div>
+				</div>
+				
+				
+			<br>
+			<br>	
+				
+			<button type="submit" class="btn btn-primary">Add</button> </div></div>
+			
+             
 			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 				<a href="/getTaxdetails" class="btn btn-primary" id="next"
 					type="submit">Next </a>
