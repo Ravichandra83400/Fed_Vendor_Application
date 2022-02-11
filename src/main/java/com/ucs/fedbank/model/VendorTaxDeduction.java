@@ -1,6 +1,6 @@
 package com.ucs.fedbank.model;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -15,6 +15,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
 import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name = "tax_registration_details")
@@ -46,7 +48,11 @@ public class VendorTaxDeduction {
 	private String tds_deduction_limit;
 	private String tds_limit_filename;
 	private byte[] tds_limit_document;
+	
+	@DateTimeFormat(pattern = "dd-MMMM-yy")
 	private Date tds_start_date;
+	
+	@DateTimeFormat(pattern = "dd-MMMM-yy")
 	private Date tds_end_date;
 
 	/*
@@ -279,7 +285,8 @@ public class VendorTaxDeduction {
 	}
 
 	public void setTds_start_date(Date tds_start_date) {
-		this.tds_start_date = tds_start_date;
+		System.out.println("VendorTaxDeduction.setTds_start_date()   tds_start_date--->"+tds_start_date);
+			this.tds_start_date = tds_start_date;
 	}
 
 	public Date getTds_end_date() {

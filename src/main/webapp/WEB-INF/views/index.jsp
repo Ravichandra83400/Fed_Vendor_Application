@@ -12,11 +12,14 @@
 <title>Welcome</title>
 </head>
 <body>
+
+
+
 	<div class="card-header bg-info text-center text-white">
 			<h3>Vendor Registration Form</h3>
 		</div>
 		<div>
-	<div class="col-5">
+ 	<div class="col-5">
 
 		<br>
 		<a href="/register" class="btn btn-success ">Register Vendor <i
@@ -38,7 +41,7 @@
 			<tbody>
 				<c:forEach var="vendordata" items="${vendorList}">
 					<tr>
-						<th scope="row">${vendordata.vendorID}</th>
+						<th scope="row"><a href="/register"> ${vendordata.vendorID}</a></th>
 						<td>${vendordata.companyName}</td>
 						<td>${vendordata.legalStatus}</td>
 						<td>${vendordata.yearOfCorporation}</td>

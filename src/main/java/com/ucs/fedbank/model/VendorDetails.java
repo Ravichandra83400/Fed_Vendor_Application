@@ -40,7 +40,7 @@ public class VendorDetails {
 	@Column(name = "legal_status")
 	private String legalStatus;
 	@Column(name = "year_of_incorporation")
-	private Date yearOfCorporation;
+	private int yearOfCorporation;
 	@Column(name = " nature_of_business")
 	private String  nature;
 	@Column(name = "address_line1")
@@ -74,6 +74,12 @@ public class VendorDetails {
 	public String getCompanyName() {
 		return companyName;
 	}
+	public int getYearOfCorporation() {
+		return yearOfCorporation;
+	}
+	public void setYearOfCorporation(int yearOfCorporation) {
+		this.yearOfCorporation = yearOfCorporation;
+	}
 	public String getVendorID() {
 		return vendorID;
 	}
@@ -96,12 +102,7 @@ public class VendorDetails {
 		this.legalStatus = legalStatus;
 	}
 		
-	public Date getYearOfCorporation() {
-		return yearOfCorporation;
-	}
-	public void setYearOfCorporation(Date yearOfCorporation) {
-		this.yearOfCorporation = yearOfCorporation;
-	}
+	
 	public String getNature() {
 		return nature;
 	}

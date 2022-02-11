@@ -179,7 +179,7 @@ public class VendorManagementController {
 		List<VendorGstDetails> gstDetails = new ArrayList<VendorGstDetails>();
 
 		for (int i = 0; i < gst_number.length; i++) {
-
+			
 			VendorGstDetails vendorGstDetails = new VendorGstDetails();
 			vendorGstDetails.setGst_number(gst_number[i]);
 			vendorGstDetails.setGst_document(gst_document[i].getBytes());

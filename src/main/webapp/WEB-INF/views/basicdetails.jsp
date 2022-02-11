@@ -13,6 +13,11 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+
+       
+	
+	
 <script>
 $(document).ready(function(){
   $("#pincode").change(function(){
@@ -115,7 +120,7 @@ function 	(evt) {
 			</div>
 		            <div class="col">
                  <label for="yearOfCorporation" class="form-label">Year Of
-					Incorporation</label> <input type="date" name="yearOfCorporation"
+					Incorporation</label> <input type="number"    onkeypress="return onlyNumberKey(event)" name="yearOfCorporation"
 					class="form-control" id="yearof" required="required">
 			</div>
 
@@ -162,7 +167,7 @@ function 	(evt) {
 				<div class="row">
 				<div class="col">
 				<label for="pincode" class="form-label">PinCode</label> <input
-					type="text" pattern="[0-9]{6}" class="form-control" name="pincode"
+					type="text"  onkeypress="return onlyNumberKey(event)" pattern="[0-9]{6}" class="form-control" name="pincode"
 					maxlength="6" id="pincode" required="required">
 			</div>
 			<!-- 	<div class="col-md-6">
@@ -244,7 +249,7 @@ function 	(evt) {
 		    <div class="col-md-6">
 				<label for="email" class="form-label" >Email</label> <input
 					type="email" maxlength="30" class="form-control" name="email"
-					id="number" required="required">
+					id="email" required="required">
 			</div>
 		    
 		    <br><br>
