@@ -49,10 +49,10 @@ public class VendorTaxDeduction {
 	private String tds_limit_filename;
 	private byte[] tds_limit_document;
 	
-	@DateTimeFormat(pattern = "dd-MMMM-yy")
+	
 	private Date tds_start_date;
 	
-	@DateTimeFormat(pattern = "dd-MMMM-yy")
+	
 	private Date tds_end_date;
 
 	/*

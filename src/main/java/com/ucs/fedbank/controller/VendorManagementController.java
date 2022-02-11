@@ -198,15 +198,9 @@ public class VendorManagementController {
 	public @ResponseBody List<PincodeData> getPincodeDetails(@RequestParam("pincode")String pincode){
 		
 	return	managementService.getPincodeData(pincode);
-		
-		
-		
-		
-		
-		
-		
-	}
-	
+		}
+    
+   
 	
 
 }

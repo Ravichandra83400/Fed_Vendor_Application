@@ -101,12 +101,12 @@
       <label>Agreement Start Date</label>
 				 
 			<input type="date"	class="form-control mb-2 mr-sm-2 mb-sm-0" id="aggStartDate"
-				placeholder="Aggrement Start Date" name="agreement_start_date" /> </div>
+				placeholder="Aggrement Start Date" name="agreement_start_date"  required="required"/> </div>
 				<div class="col">
 				<label>Agreement End Date</label>
 				 <input type="date"
 				class="form-control mb-2 mr-sm-2 mb-sm-0" id="aggEndDate"
-				placeholder="Aggrement End Date" name="agreement_end_date" /></div>
+				placeholder="Aggrement End Date" name="agreement_end_date" required="required" /></div>
 				</div>
 
             <div class="col-6">

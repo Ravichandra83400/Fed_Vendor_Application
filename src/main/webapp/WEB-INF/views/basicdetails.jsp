@@ -241,7 +241,7 @@ function 	(evt) {
 
 			   <div class="col">
 				<label for="number" class="form-label">Mobile Number</label> <input
-					type="tel" onkeypress="return onlyNumberKey(event)"  class="form-control" id="number"
+					type="tel"  onclick="return onlyNumberKey(event)"  class="form-control" id="number"
 					maxlength="10" name="number" required="required">
 			</div>
            </div>

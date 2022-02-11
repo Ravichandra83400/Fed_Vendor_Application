@@ -34,6 +34,7 @@
 			alert();
 		} else {
 			alert('Please Enter Valid GSTIN Number');
+			return false;
 			}
 
 	}
@@ -255,16 +256,20 @@ function readURL() {
 						Start Date</label>
 
 					<div class="col">
-						<input class="form-control" type="date" name=tds_start_date />
+						<input class="form-control" type="date" id="join_datepicker" required="required" name=tds_start_date />
 					</div>
 
 
 					<div class="col">
-						<input type="date" class="form-control" name="tds_end_date">
+						<input type="date" class="form-control"  id="end_datepicker" required="required" name="tds_end_date">
 					</div>
 					<div class="col"></div>
 
 				</div>
+	
+
+				
+				
 				<br>
 				<div>
 					<table class="table table-hover small-text" id="tb">
@@ -279,7 +284,7 @@ function readURL() {
 									class="glyphicon glyphicon-plus"></span></a></th>
 						<tr>
 							<td><input type="text" name="gstNumber"
-								onchange="gstVerify(this)" required="required" class="form-control"></td>
+								onkeypress="gstVerify(this)" required="required" class="form-control"></td>
 
 							<td><input type="file" name="gstDocument"
 								accept="application/pdf" class="form-control"

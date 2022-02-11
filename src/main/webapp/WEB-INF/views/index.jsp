@@ -41,11 +41,14 @@
 			<tbody>
 				<c:forEach var="vendordata" items="${vendorList}">
 					<tr>
-						<th scope="row"><a href="/register"> ${vendordata.vendorID}</a></th>
+						<th scope="row"><a href="/register/?vendorId= ${vendordata.vendorID}"> ${vendordata.vendorID}</a></th>
 						<td>${vendordata.companyName}</td>
 						<td>${vendordata.legalStatus}</td>
 						<td>${vendordata.yearOfCorporation}</td>
 						<td>${vendordata.nature}</td>
+						                   
+						
+						
 					</tr>
 				</c:forEach>
 			</tbody>
